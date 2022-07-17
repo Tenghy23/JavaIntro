@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "learnfabric",
+  "version": "${version}",
+
+  "name": "MC Course Fabric Mod",
+  "description": "A mod to learn more about fabric MC modding",
+  "authors": [
+    "xyph"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/Tenghy23/JavaIntro"
+  },
+
+  "license": "MIT",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.learnfabric.MCCourseMod"
+    ]
+  },
+  "mixins": [
+    "learnfabric.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
