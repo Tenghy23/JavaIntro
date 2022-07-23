@@ -2,12 +2,14 @@
   "item.learnfabric.orichalcum_ingot": "Orichalcum Ingot",
   "item.learnfabric.orichalcum_nugget": "Orichalcum Nugget",
   "item.learnfabric.raw_orichalcum": "Raw Orichalcum",
+  "item.learnfabric.dowsing_rod": "Dowsing Rod",
 
   "block.learnfabric.orichalcum_block": "Orichalcum Block",
   "block.learnfabric.raw_orichalcum_block": "Raw Orichalcum Block",
-
   "block.learnfabric.orichalcum_ore": "Orichalcum Ore",
   "block.learnfabric.deepslate_orichalcum_ore": "Deepslate Orichalcum Ore",
 
-  "itemGroup.learnfabric.course": "Course Tab"
+  "itemGroup.learnfabric.course": "Course Tab",
+
+  "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!"
 }
