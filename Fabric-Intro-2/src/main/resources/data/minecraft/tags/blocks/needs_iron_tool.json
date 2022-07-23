@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "learnfabric:orichalcum_ore",
+    "learnfabric:deepslate_orichalcum_ore",
+    "learnfabric:orichalcum_block",
+    "learnfabric:raw_orichalcum_block"
+  ]
+}
