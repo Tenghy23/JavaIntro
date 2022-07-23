@@ -11,5 +11,7 @@
 
   "itemGroup.learnfabric.course": "Course Tab",
 
-  "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!"
+  "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!",
+
+  "block.learnfabric.speedy_block": "Speedy Block"
 }
