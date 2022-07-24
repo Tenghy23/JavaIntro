@@ -13,5 +13,7 @@
 
   "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!",
 
-  "block.learnfabric.speedy_block": "Speedy Block"
+  "block.learnfabric.speedy_block": "Speedy Block",
+
+  "item.learnfabric.turnip": "Turnip"
 }

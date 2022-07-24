@@ -25,6 +25,9 @@ public class ModItems {
         // 2. setup base method to register mod
         return Registry.register(Registry.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }
+
+    public static final Item TURNIP = registerItem("turnip",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE).food(ModFoodComponents.TURNIP)));
     public static void registerModItems() {
         // 1. setup to identify mod is successfully registered in console
         // 1a. setup gradle.properties + fabric.mod.json + learnfabric.mixins.json
