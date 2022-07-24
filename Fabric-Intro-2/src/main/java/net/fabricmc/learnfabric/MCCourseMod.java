@@ -3,6 +3,7 @@ package net.fabricmc.learnfabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.learnfabric.block.ModBlocks;
 import net.fabricmc.learnfabric.item.ModItems;
+import net.fabricmc.learnfabric.util.ModRegistries;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +21,6 @@ public class MCCourseMod implements ModInitializer {
 		// 7. add model/item json files + textures/item png files
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModRegistries.registerModStuffs();
 	}
 }

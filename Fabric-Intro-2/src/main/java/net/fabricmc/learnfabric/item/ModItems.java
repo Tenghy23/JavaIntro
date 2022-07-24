@@ -21,13 +21,16 @@ public class ModItems {
     // maxDamage here refers to total durability value
     public static final Item DOWSING_ROD = registerItem("dowsing_rod",
             new DowsingRodItem(new FabricItemSettings().group(ModItemGroups.COURSE).maxDamage(32)));
+    public static final Item TURNIP = registerItem("turnip",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE).food(ModFoodComponents.TURNIP)));
+    public static final Item COAL_SLIVER = registerItem("coal_silver",
+            new Item(new FabricItemSettings().group(ModItemGroups.COURSE)));
+
     private static Item registerItem(String name, Item item) {
         // 2. setup base method to register mod
         return Registry.register(Registry.ITEM, new Identifier(MCCourseMod.MOD_ID, name), item);
     }
 
-    public static final Item TURNIP = registerItem("turnip",
-            new Item(new FabricItemSettings().group(ModItemGroups.COURSE).food(ModFoodComponents.TURNIP)));
     public static void registerModItems() {
         // 1. setup to identify mod is successfully registered in console
         // 1a. setup gradle.properties + fabric.mod.json + learnfabric.mixins.json
