@@ -1,6 +1,8 @@
 package net.fabricmc.learnfabric.item.custom;
 
+import net.fabricmc.learnfabric.util.ModTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
@@ -34,10 +36,11 @@ public class DowsingRodItem extends Item {
 
             // loop from top pos all the way down, identify valuable block and return pos
             for(int i = 0; i <= positionClicked.getY(); i++) {
-                Block blockBelow = context.getWorld().getBlockState(positionClicked.down(i)).getBlock();
+                BlockState stateBelow = context.getWorld().getBlockState(positionClicked.down(i));
+                Block blockBelow = stateBelow.getBlock();
 
-                if(isValuableBlock(blockBelow)) {
-                    outputValuableCoordinates(positionClicked, player, blockBelow);
+                if(isValuableBlock(stateBelow)) {
+                    outputValuableCoordinates(positionClicked.add(0, -i, 0), player, blockBelow);
                     foundBlock = true;
                     break;
                 }
@@ -71,10 +74,7 @@ public class DowsingRodItem extends Item {
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"), false);
     }
 
-    private boolean isValuableBlock(Block block) {
-        return block == Blocks.COAL_ORE || block == Blocks.COPPER_ORE
-                || block == Blocks.DIAMOND_ORE || block == Blocks.IRON_ORE
-                || block == Blocks.EMERALD_ORE || block == Blocks.GOLD_ORE
-                || block == Blocks.DEEPSLATE_DIAMOND_ORE;
+    private boolean isValuableBlock(BlockState block) {
+        return block.isIn(ModTags.Blocks.DOWSING_ROD_DETECTABLE_BLOCKS);
     }
 }
