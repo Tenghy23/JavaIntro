@@ -2,15 +2,18 @@ package net.fabricmc.learnfabric.item.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
-import org.apache.commons.compress.compressors.lz77support.LZ77Compressor;
-
-import javax.swing.*;
+import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+import java.util.List;
 
 // when creating an advanced item, extend the Item and make your own class name
 // a dowsing rod is an item to detect if valuable ore is located below object
@@ -19,7 +22,7 @@ public class DowsingRodItem extends Item {
         super(settings);
     }
 
-    // then override the methods inside Item class for custom behaviour
+    // then override the methods inside Item class for custom bfehaviour
     // useOnBlock occurs when right click on block
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
@@ -52,6 +55,15 @@ public class DowsingRodItem extends Item {
                 (player) -> player.sendToolBreakStatus(player.getActiveHand()));
 
         return super.useOnBlock(context);
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("item.learnfabric.dowsing_rod.tooltip.shift"));
+        } else {
+            tooltip.add(Text.translatable("item.learnfabric.dowsing_rod.tooltip"));
+        }
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, PlayerEntity player, Block blockBelow) {

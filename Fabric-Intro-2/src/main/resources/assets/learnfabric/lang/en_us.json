@@ -3,18 +3,17 @@
   "item.learnfabric.orichalcum_nugget": "Orichalcum Nugget",
   "item.learnfabric.raw_orichalcum": "Raw Orichalcum",
   "item.learnfabric.dowsing_rod": "Dowsing Rod",
+  "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!",
+  "item.learnfabric.turnip": "Turnip",
+  "item.learnfabric.coal_silver": "Silver Coal",
+  "item.learnfabric.dowsing_rod.tooltip.shift": "Right Click to find valuables",
+  "item.learnfabric.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
 
   "block.learnfabric.orichalcum_block": "Orichalcum Block",
   "block.learnfabric.raw_orichalcum_block": "Raw Orichalcum Block",
   "block.learnfabric.orichalcum_ore": "Orichalcum Ore",
   "block.learnfabric.deepslate_orichalcum_ore": "Deepslate Orichalcum Ore",
-
-  "itemGroup.learnfabric.course": "Course Tab",
-
-  "item.learnfabric.dowsing_rod.no_valuables": "No Valuables found!",
-
   "block.learnfabric.speedy_block": "Speedy Block",
 
-  "item.learnfabric.turnip": "Turnip",
-  "item.learnfabric.coal_silver": "Silver Coal"
+  "itemGroup.learnfabric.course": "Course Tab"
 }
