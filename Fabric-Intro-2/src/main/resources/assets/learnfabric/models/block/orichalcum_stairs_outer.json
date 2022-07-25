@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "learnfabric:block/orichalcum_block",
+    "top": "learnfabric:block/orichalcum_block",
+    "side": "learnfabric:block/orichalcum_block"
+  }
+}

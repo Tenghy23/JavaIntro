@@ -7,6 +7,8 @@ import net.fabricmc.learnfabric.block.custom.SpeedyBlock;
 import net.fabricmc.learnfabric.item.ModItemGroups;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -31,6 +33,14 @@ public class ModBlocks {
 
     public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
             new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_STAIRS = registerBlock("orichalcum_stairs",
+            new StairsBlock(ModBlocks.ORICHALCUM_BLOCK.getDefaultState(),
+                    FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_SLAB = registerBlock("orichalcum_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         // 3. register Block

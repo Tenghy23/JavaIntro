@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "learnfabric:block/orichalcum_slab"
+    },
+    "type=double": {
+      "model": "learnfabric:block/orichalcum_block"
+    },
+    "type=top": {
+      "model": "learnfabric:block/orichalcum_slab_top"
+    }
+  }
+}
