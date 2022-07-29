@@ -54,6 +54,13 @@ public class ModBlocks {
     public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
 
+    public static final Block CHERRY_BLOSSOM_DOOR = registerBlock("cherry_blossom_door",
+            new DoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
+
+    public static final Block CHEERY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
+
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         // 3. register Block

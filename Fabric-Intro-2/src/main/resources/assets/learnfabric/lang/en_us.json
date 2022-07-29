@@ -21,6 +21,8 @@
   "block.learnfabric.orichalcum_fence": "Orichalcum Fence",
   "block.learnfabric.orichalcum_fence_gate": "Orichalcum Fence Gate",
   "block.learnfabric.orichalcum_wall": "Orichalcum Wall",
+  "block.learnfabric.cherry_blossom_door": "Cherry Blossom Door",
+  "block.learnfabric.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
 
   "itemGroup.learnfabric.course": "Course Tab"
 }
