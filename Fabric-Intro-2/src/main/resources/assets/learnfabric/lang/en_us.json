@@ -18,6 +18,9 @@
   "block.learnfabric.orichalcum_slab": "Orichalcum Slab",
   "block.learnfabric.orichalcum_button": "Orichalcum Button",
   "block.learnfabric.orichalcum_pressure_plate": "Orichalcum Pressure Plate",
+  "block.learnfabric.orichalcum_fence": "Orichalcum Fence",
+  "block.learnfabric.orichalcum_fence_gate": "Orichalcum Fence Gate",
+  "block.learnfabric.orichalcum_wall": "Orichalcum Wall",
 
   "itemGroup.learnfabric.course": "Course Tab"
 }

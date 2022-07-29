@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "learnfabric:block/orichalcum_block"
+  }
+}
