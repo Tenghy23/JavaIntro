@@ -16,6 +16,8 @@
   "block.learnfabric.speedy_block": "Speedy Block",
   "block.learnfabric.orichalcum_stairs": "Orichalcum Stairs",
   "block.learnfabric.orichalcum_slab": "Orichalcum Slab",
+  "block.learnfabric.orichalcum_button": "Orichalcum Button",
+  "block.learnfabric.orichalcum_pressure_plate": "Orichalcum Pressure Plate",
 
   "itemGroup.learnfabric.course": "Course Tab"
 }
