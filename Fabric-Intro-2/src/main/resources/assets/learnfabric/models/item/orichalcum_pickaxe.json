@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "mccourse:item/orichalcum_pickaxe"
+    "layer0": "learnfabric:item/orichalcum_pickaxe"
   }
 }

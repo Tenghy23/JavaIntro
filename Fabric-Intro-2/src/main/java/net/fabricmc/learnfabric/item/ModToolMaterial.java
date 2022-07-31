@@ -1,3 +1,5 @@
+package net.fabricmc.learnfabric.item;
+
 import net.fabricmc.learnfabric.item.ModItems;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;

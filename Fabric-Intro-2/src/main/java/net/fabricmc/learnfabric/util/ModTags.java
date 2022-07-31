@@ -11,6 +11,8 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> DOWSING_ROD_DETECTABLE_BLOCKS =
                 createTag("dowsing_rod_detectable_blocks");
+        public static final TagKey<Block> PAXEL_MINEABLE =
+                createTag("mineable/paxel");
 
         public static final TagKey<Block> ORICHALCUM_BLOCKS =
                 createCommonTag("orichalcum_blocks");

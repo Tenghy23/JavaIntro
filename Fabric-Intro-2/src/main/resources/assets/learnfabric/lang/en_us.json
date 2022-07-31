@@ -8,6 +8,12 @@
   "item.learnfabric.coal_silver": "Silver Coal",
   "item.learnfabric.dowsing_rod.tooltip.shift": "Right Click to find valuables",
   "item.learnfabric.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information",
+  "item.learnfabric.orichalcum_pickaxe": "Orichalcum Pickaxe",
+  "item.learnfabric.orichalcum_axe": "Orichalcum Axe",
+  "item.learnfabric.orichalcum_shovel": "Orichalcum Shovel",
+  "item.learnfabric.orichalcum_hoe": "Orichalcum Hoe",
+  "item.learnfabric.orichalcum_sword": "Orichalcum Sword",
+  "item.learnfabric.orichalcum_paxel": "Orichalcum Paxel",
 
   "block.learnfabric.orichalcum_block": "Orichalcum Block",
   "block.learnfabric.raw_orichalcum_block": "Raw Orichalcum Block",

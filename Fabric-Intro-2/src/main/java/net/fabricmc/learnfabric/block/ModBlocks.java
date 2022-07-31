@@ -16,6 +16,8 @@ public class ModBlocks {
 
     // 4. create & define individual blocks
     // 5. create blockstates folder
+
+    //region orichalcum blocks
     public static final Block ORICHALCUM_BLOCK = registerBlock("orichalcum_block",
         new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroups.COURSE);
 
@@ -27,10 +29,9 @@ public class ModBlocks {
 
     public static final Block RAW_ORICHALCUM_BLOCK = registerBlock("raw_orichalcum_block",
             new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ModItemGroups.COURSE);
+    //endregion
 
-    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
-            new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
-
+    //region orichalcum furniture
     public static final Block ORICHALCUM_STAIRS = registerBlock("orichalcum_stairs",
             new StairsBlock(ModBlocks.ORICHALCUM_BLOCK.getDefaultState(),
                     FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
@@ -53,14 +54,15 @@ public class ModBlocks {
 
     public static final Block ORICHALCUM_WALL = registerBlock("orichalcum_wall",
             new WallBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
+    //endregion
+
+    public static final Block SPEEDY_BLOCK = registerBlock("speedy_block",
+            new SpeedyBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool()), ModItemGroups.COURSE);
 
     public static final Block CHERRY_BLOSSOM_DOOR = registerBlock("cherry_blossom_door",
             new DoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
-
     public static final Block CHEERY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
-
-
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         // 3. register Block
