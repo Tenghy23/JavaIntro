@@ -2,6 +2,7 @@ package net.fabricmc.learnfabric;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.learnfabric.block.ModBlocks;
+import net.fabricmc.learnfabric.enchanment.ModEnchantment;
 import net.fabricmc.learnfabric.item.ModItems;
 import net.fabricmc.learnfabric.util.ModRegistries;
 import org.slf4j.Logger;
@@ -22,5 +23,6 @@ public class MCCourseMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModRegistries.registerModStuffs();
+		ModEnchantment.registerModEnchantments();
 	}
 }

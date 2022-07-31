@@ -34,5 +34,7 @@
   "block.learnfabric.cherry_blossom_door": "Cherry Blossom Door",
   "block.learnfabric.cherry_blossom_trapdoor": "Cherry Blossom Trapdoor",
 
-  "itemGroup.learnfabric.course": "Course Tab"
+  "itemGroup.learnfabric.course": "Course Tab",
+
+  "enchantment.learnfabric.lightning_striker": "Lightning Striker"
 }
