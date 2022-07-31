@@ -46,7 +46,7 @@ public class ModItems {
             new ModPaxelItem(ModToolMaterial.ORICHALCUM, 1, 1f,
                     new FabricItemSettings().group(ModItemGroups.COURSE)));
     public static final Item ORICHALCUM_HELMET = registerItem("orichalcum_helmet",
-            new ArmorItem(ModArmorMaterials.ORICHALCUM, EquipmentSlot.HEAD,
+            new ModArmorItem(ModArmorMaterials.ORICHALCUM, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroups.COURSE)));
     public static final Item ORICHALCUM_CHESTPLATE = registerItem("orichalcum_chestplate",
             new ArmorItem(ModArmorMaterials.ORICHALCUM, EquipmentSlot.CHEST,
