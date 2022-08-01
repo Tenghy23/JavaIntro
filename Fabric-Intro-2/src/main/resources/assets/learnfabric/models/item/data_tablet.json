@@ -1,6 +1,14 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "learnfabric:item/data_tablet_on"
-  }
+    "layer0": "learnfabric:item/data_tablet_off"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "learnfabric:on": 1
+      },
+      "model": "learnfabric:item/data_tablet_on"
+    }
+  ]
 }
