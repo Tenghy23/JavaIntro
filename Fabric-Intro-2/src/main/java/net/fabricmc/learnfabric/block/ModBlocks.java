@@ -3,6 +3,7 @@ package net.fabricmc.learnfabric.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.learnfabric.MCCourseMod;
+import net.fabricmc.learnfabric.block.custom.OrichalcumLampBlock;
 import net.fabricmc.learnfabric.block.custom.SpeedyBlock;
 import net.fabricmc.learnfabric.item.ModItemGroups;
 import net.minecraft.block.*;
@@ -63,6 +64,10 @@ public class ModBlocks {
             new DoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
     public static final Block CHEERY_BLOSSOM_TRAPDOOR = registerBlock("cherry_blossom_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.of(Material.WOOD).strength(4.0f).requiresTool().nonOpaque()), ModItemGroups.COURSE);
+
+    public static final Block ORICHALCUM_LAMP = registerBlock("orichalcum_lamp",
+            new OrichalcumLampBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).requiresTool()
+                    .luminance((state) -> state.get(OrichalcumLampBlock.CLICKED) ? 15 : 0)), ModItemGroups.COURSE);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         // 3. register Block
