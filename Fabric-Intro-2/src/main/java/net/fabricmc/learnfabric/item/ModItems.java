@@ -57,6 +57,12 @@ public class ModItems {
     public static final Item ORICHALCUM_BOOTS = registerItem("orichalcum_boots",
             new ArmorItem(ModArmorMaterials.ORICHALCUM, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.COURSE)));
+    public static final Item ORICHALCUM_HORSE_ARMOR = registerItem("orichalcum_horse_armor",
+            new HorseArmorItem(15, "orichalcum",
+                    new FabricItemSettings().group(ModItemGroups.COURSE)));
+    public static final Item DATA_TABLET = registerItem("data_tablet",
+            new DataTabletItem(new FabricItemSettings().group(ModItemGroups.COURSE).maxCount(1)));
+
 
 
     private static Item registerItem(String name, Item item) {
